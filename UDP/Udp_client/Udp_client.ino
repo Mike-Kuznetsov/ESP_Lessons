@@ -11,7 +11,11 @@
 */
 
 short button1 = 4; // Button pin = D2 (GPIO4)
-#include <ESP8266WiFi.h>
+#ifdef ESP32
+  #include <WiFi.h>
+#else
+  #include <ESP8266WiFi.h>
+#endif
 #include <WiFiUdp.h>
 
 #ifndef STASSID
