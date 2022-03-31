@@ -1,3 +1,13 @@
+/*
+  Program sends text via ESP to Serial Port.
+  Программа отправляет текст на ESP, а ESP отправляет его на монитор серийного порта.
+  
+  Заметки ESPшника - Урок 5 - Веб-сервер.
+  By Mautoz Tech.  
+  Mautoz Tech https://www.youtube.com/channel/UCWN_KT_CAjGZQG5grHldL8w
+  Заметки ESPшника - https://www.youtube.com/channel/UCQAbEIaWFdARXKqcufV6y_g
+*/
+
 #ifdef ESP32
   #include <WiFi.h>
   #include <WiFiClient.h>
