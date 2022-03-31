@@ -1,3 +1,14 @@
+/*
+  Program turns the built-in LED on and off when button is pressed.
+  Uses script from GoogleAPI.
+  Программа включает и выключает встроенный светодиод по нажатию на кнопку.
+  Использует скрипт из GoogleAPI.
+  
+  Заметки ESPшника - Урок 5 - Веб-сервер.
+  By Mautoz Tech.  
+  Mautoz Tech https://www.youtube.com/channel/UCWN_KT_CAjGZQG5grHldL8w
+  Заметки ESPшника - https://www.youtube.com/channel/UCQAbEIaWFdARXKqcufV6y_g
+*/
 #ifdef ESP32
   #include <WiFi.h>
   #include <WiFiClient.h>
