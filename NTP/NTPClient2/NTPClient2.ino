@@ -14,7 +14,11 @@
   Заметки ESPшника - https://www.youtube.com/channel/UCQAbEIaWFdARXKqcufV6y_g
   Github - https://github.com/Mike-Kuznetsov
 */
-#include <ESP8266WiFi.h>
+#ifdef ESP32
+  #include <WiFi.h>
+#else
+  #include <ESP8266WiFi.h>
+#endif
 #include <WiFiUdp.h>
 #ifndef STASSID
 #define STASSID "Wi-Fi"
