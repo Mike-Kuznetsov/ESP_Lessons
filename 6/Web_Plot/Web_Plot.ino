@@ -28,6 +28,8 @@ DHT dht(DHTPIN, DHT11);
 const char* ssid = "Wi-Fi";
 const char* password = "Password";
 
+String temperature;
+String humidity;
 AsyncWebServer server(80);
 
 void setup(){
@@ -47,13 +49,16 @@ void setup(){
     request->send(SPIFFS, "/index.html");
   });
   server.on("/temperature", HTTP_GET, [](AsyncWebServerRequest *request){
-    request->send_P(200, "text/plain", String(dht.readTemperature()).c_str());
+    request->send_P(200, "text/plain", temperature.c_str());
   });
   server.on("/humidity", HTTP_GET, [](AsyncWebServerRequest *request){
-    request->send_P(200, "text/plain", String(dht.readHumidity()).c_str());
+    request->send_P(200, "text/plain", humidity.c_str());
   });
   server.begin();
 }
 
 void loop(){
+  temperature=String(dht.readTemperature());
+  humidity=String(dht.readHumidity());
+  delay(100);
 }
