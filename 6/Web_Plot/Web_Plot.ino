@@ -1,4 +1,9 @@
-tr/*********
+/*
+  Заметки ESPшника - Урок 6 - Построение графиков по данным с датчиков в браузере.
+  Mautoz Tech https://www.youtube.com/channel/UCWN_KT_CAjGZQG5grHldL8w
+  Заметки ESPшника - https://www.youtube.com/channel/UCQAbEIaWFdARXKqcufV6y_g
+*/
+/*********
   Rui Santos
   Complete project details at https://RandomNerdTutorials.com
   
