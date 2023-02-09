@@ -1,3 +1,11 @@
+/*
+  This code for ESP writes and reads variables using ESP flash permanent memory. You need to have ESP_EEPROM library installed.
+  Этот код для ESP записывает и читает переменные используя постоянную память ESP. Вам необходима библиотека ESP_EEPROM.
+
+  Mautoz Tech https://www.youtube.com/channel/UCWN_KT_CAjGZQG5grHldL8w
+  Заметки ESPшника - https://www.youtube.com/channel/UCQAbEIaWFdARXKqcufV6y_g
+*/  
+
 #include <ESP_EEPROM.h>
 
 void setup() {
