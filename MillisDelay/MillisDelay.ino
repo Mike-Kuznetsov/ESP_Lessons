@@ -8,8 +8,8 @@
   Github - https://github.com/Mike-Kuznetsov
 */
 
-void wait(int waitingTime){
-  int waitingStartTime = millis();
+void wait(long waitingTime){
+  long waitingStartTime = millis();
   while (millis() - waitingStartTime < waitingTime){
     // You can put your code here. It'll be executed even if other program is waiting
     // Вы можете вставлять свой код сюда, если хотите чтобы он выполнялся даже когда остальная программа в режиме ожидания.
