@@ -13,6 +13,7 @@ void wait(long waitingTime){
   while (millis() - waitingStartTime < waitingTime){
     // You can put your code here. It'll be executed even if other program is waiting
     // Вы можете вставлять свой код сюда, если хотите чтобы он выполнялся даже когда остальная программа в режиме ожидания.
+    //delay(1) // Uncomment if you have errors
   }
 }
 
