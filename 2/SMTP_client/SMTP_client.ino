@@ -1,3 +1,13 @@
+/*
+  Теперь вместо пароля от почты аккаунта Mail.ru необходимо использовать специальный токен, 
+  который можно получить в меню "Пароль и безопасность" -> "Пароли для внешних приложений"
+  Работает без SSL шифрования.
+  This script doesn't use SSL encryption.
+  -----
+  Заметки ESPшника - Урок 2 - SMTP-клиент. Отправляем сообщения на почту.
+  Mautoz Tech https://www.youtube.com/c/MautozTech
+  Заметки ESPшника - https://www.youtube.com/@ESPdev
+*/
 #ifdef ESP32
   #include <WiFi.h>
 #else
