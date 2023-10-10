@@ -8,6 +8,7 @@
   This code is in the public domain.
   -----
   Заметки ESPшника - Урок 3 - NTP-клиент - Версия 1
+  В реальных проектах лучше использовать готовые библиотеки для работы со временем. Пример (не мой): https://randomnerdtutorials.com/esp32-ntp-client-date-time-arduino-ide/
   Код считает время и синхронизируется с NTP-сервером.
   Code from ESP8266 examples. Adapted by Mautoz Tech.  
   Mautoz Tech https://www.youtube.com/channel/UCWN_KT_CAjGZQG5grHldL8w
