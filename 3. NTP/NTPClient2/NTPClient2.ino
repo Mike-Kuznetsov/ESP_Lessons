@@ -9,6 +9,7 @@
   -----
   Заметки ESPшника - Урок 3 - NTP-клиент - Версия 2
   Код показывает время при нажатии на кнопку, кнопка подключена к пинам D2 и GND.
+  В реальных проектах лучше использовать готовые библиотеки для работы со временем. Пример (не мой): https://randomnerdtutorials.com/esp32-ntp-client-date-time-arduino-ide/
   Code from ESP8266 examples. Adapted by Mautoz Tech.  
   Mautoz Tech https://www.youtube.com/channel/UCWN_KT_CAjGZQG5grHldL8w
   Заметки ESPшника - https://www.youtube.com/channel/UCQAbEIaWFdARXKqcufV6y_g
