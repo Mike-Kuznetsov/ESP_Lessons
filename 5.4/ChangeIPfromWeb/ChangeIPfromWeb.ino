@@ -66,24 +66,22 @@ void handleRoot() {
 void handleSave() {
   if (server.args()==4){
     Serial.println("New IP: " + server.arg("ip1")+"."+server.arg("ip2")+"."+server.arg("ip3")+"."+server.arg("ip4"));
-    if ((server.arg("ip1").toInt()>0) &&(server.arg("ip1").toInt()<255)&&(server.arg("ip2").toInt()>=0) &&(server.arg("ip2").toInt()<255)&&(server.arg("ip3").toInt()>=0) &&(server.arg("ip3").toInt()<255)&&(server.arg("ip4").toInt()>=0) &&(server.arg("ip4").toInt()<255)){
-      Serial.println("New IP: " + server.arg("ip1")+"."+server.arg("ip2")+"."+server.arg("ip3")+"."+server.arg("ip4"));
-      IPAddress ip(server.arg("ip1").toInt(),server.arg("ip2").toInt(),server.arg("ip3").toInt(),server.arg("ip4").toInt());
-      IPAddress gateway(192,168,1,1);
-      IPAddress subnet(255,255,255,0);
-      WiFi.begin(ssid, password);
-      WiFi.config(ip, gateway, subnet);
-      Serial.println("");
-      while (WiFi.status() != WL_CONNECTED) {
-        delay(500);
-        Serial.print(".");
-      }
-      Serial.println("");
-      Serial.print("Connected to "); 
-      Serial.println(ssid);
-      Serial.print("IP address: ");
-      Serial.println(WiFi.localIP());
-    }  
+    Serial.println("New IP: " + server.arg("ip1")+"."+server.arg("ip2")+"."+server.arg("ip3")+"."+server.arg("ip4"));
+    IPAddress ip(server.arg("ip1").toInt(),server.arg("ip2").toInt(),server.arg("ip3").toInt(),server.arg("ip4").toInt());
+    IPAddress gateway(192,168,1,1);
+    IPAddress subnet(255,255,255,0);
+    WiFi.begin(ssid, password);
+    WiFi.config(ip, gateway, subnet);
+    Serial.println("");
+    while (WiFi.status() != WL_CONNECTED) {
+      delay(500);
+      Serial.print(".");
+    }
+    Serial.println("");
+    Serial.print("Connected to "); 
+    Serial.println(ssid);
+    Serial.print("IP address: ");
+    Serial.println(WiFi.localIP()); 
   }
 }
 
