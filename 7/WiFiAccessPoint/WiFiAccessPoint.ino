@@ -1,15 +1,23 @@
 /*
-  This code for ESP8266 creates Wi-Fi Access Point
-  Этот код для ESP8266 создает точку доступа Wi-Fi
+  This code for ESP8266/ESP32 creates Wi-Fi Access Point
+  Этот код для ESP8266/ESP32 создает точку доступа Wi-Fi
   
   Mautoz Tech - https://youtube.com/c/MautozTech
   Заметки ESPшника - https://youtube.com/@espdev
 */
 
-#include <ESP8266WiFi.h>
-#include <WiFiClient.h>
-#include <ESP8266WebServer.h>
-ESP8266WebServer server(80);
+#ifdef ESP32
+  #include <WiFi.h>
+  #include <WiFiClient.h>
+  #include <WiFiAP.h>
+  #include <WebServer.h>
+  WebServer server(80);
+#else
+  #include <ESP8266WiFi.h>
+  #include <WiFiClient.h>
+  #include <ESP8266WebServer.h>
+  ESP8266WebServer server(80);
+#endif
 
 const char *ssid = "ESP_AP";
 const char *password = "12345678";
